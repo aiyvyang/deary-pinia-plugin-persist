@@ -46,6 +46,10 @@ export default defineConfig({
                 link: '/advanced/strategies',
               },
               {
+                text: 'Custom storage expire',
+                link: '/advanced/custom-expire',
+              },
+              {
                 text: 'Custom storage key',
                 link: '/advanced/custom-key',
               },

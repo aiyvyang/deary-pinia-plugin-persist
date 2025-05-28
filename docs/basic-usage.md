@@ -11,7 +11,7 @@ import { defineStore } from 'pinia'
 export const useUserStore = defineStore('storeUser', {
   state: () => {
     return {
-      firstName: 'allen',
+      firstName: 'ayy',
       lastName: 'ttk',
       accessToken: 'xxxxxxxxxxxxx',
     }
@@ -23,6 +23,8 @@ export const useUserStore = defineStore('storeUser', {
   },
   persist: {
     enabled: true,
+    // 开启 expire 后，仅支持内置存储
+    // expire: 60 * 60 * 1000 // 1小时有效期
   },
 })
 ```

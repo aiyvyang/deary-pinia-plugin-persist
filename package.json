@@ -47,6 +47,7 @@
     "vue-demi": "^0.12.1"
   },
   "peerDependencies": {
+    "@deary/utils": "^2.2.25",
     "@vue/composition-api": "^1.0.0",
     "pinia": "^2.0.0",
     "vue": "^2.0.0 || >=3.0.0"
