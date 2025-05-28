@@ -9,7 +9,7 @@
 
 pinia 的优点相比也不用多说了，但也正是由于其处于一个新生的阶段，周边生态还不够完善，在本人搭建项目的过程中便遇到了 pinia 在 uniapp 中数据持久化有效期的问题。
 
-市场上目前也有一些数据持久化的插件，例如 `vuex-persistedstate`，`pinia-plugin-persist`，`pinia-plugin-persist-uni`，是服务于 pinia 和 uniapp 的没有有效期的功能，于是便有了`@deary/pinia-plugin-persist`。
+市场上目前也有一些数据持久化的插件，例如 `vuex-persistedstate`，`pinia-plugin-persist`，`pinia-plugin-persist-uni`，是服务于 pinia 和 uniapp 的没有有效期的功能，于是便有了`@deary/pinia-plugin-persist`。相比于`pinia-plugin-persist-uni`增加持久化数据有效期的功能。
 
 # 使用说明
 
@@ -103,7 +103,7 @@ export const useUserStore = defineStore('storeUser', {
 ## 相关内容
 
 - [CSDN博客](https://deary.blog.csdn.net)
-- [说明文档](https://aiyvyang.github.io/@deary/pinia-plugin-persist/)
+- [说明文档](https://aiyvyang.github.io/deary-pinia-plugin-persist/)
 
 对你有帮助或者喜欢的话请点个 Star。
 

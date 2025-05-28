@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/pinia-plugin-persist-uni.iml" filepath="$PROJECT_DIR$/.idea/pinia-plugin-persist-uni.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Pinia持久化插件.iml" filepath="$PROJECT_DIR$/.idea/Pinia持久化插件.iml" />
     </modules>
   </component>
 </project>

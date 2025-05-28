@@ -1,11 +1,11 @@
 import { defineConfig } from 'vitepress'
 
-const META_URL = 'https://aiyvyang.github.io/@deary/pinia-plugin-persist/'
+const META_URL = 'https://aiyvyang.github.io/deary-pinia-plugin-persist/'
 const META_TITLE = 'Deary Pinia Plugin Persist'
 const META_DESCRIPTION = 'Persist pinia state data in uniAppStorage.'
 
 export default defineConfig({
-  base: '/@deary/pinia-plugin-persist/',
+  base: '/deary-pinia-plugin-persist/',
   title: META_TITLE,
   description: META_DESCRIPTION,
   lang: 'en-US',
