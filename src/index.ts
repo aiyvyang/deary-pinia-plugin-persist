@@ -142,19 +142,29 @@ export default ({ options, store }: PiniaPluginContext): void => {
     strategies.forEach((strategy) => {
       const storage = strategy.storage || options.persist?.H5Storage || window?.sessionStorage
       const storeKey = strategy.key || store.$id
-      let storageResult: string | null
+      let storageResult: unknown | null
 
       // 有效期只能使用内置的存储
       if (options.persist?.expire) {
         storageResult = useStorageWithExpiry({ key: storeKey, isSave: false }) as string | null
       } else if (isCustomStorage && storage) {
-        storageResult = storage.getItem(storeKey)
+        try {
+          storageResult = JSON.parse(storage.getItem(storeKey) as string)
+        } catch (error) {
+          console.warn('JSON.parse', error)
+          storageResult = null
+        }
       } else {
-        storageResult = uni.getStorageSync(storeKey)
+        try {
+          storageResult = JSON.parse(uni.getStorageSync(storeKey))
+        } catch (error) {
+          console.warn('JSON.parse', error)
+          storageResult = null
+        }
       }
 
       if (storageResult) {
-        store.$patch(JSON.parse(storageResult))
+        store.$patch(storageResult)
         updateStorage(strategy, store, options.persist)
       }
     })

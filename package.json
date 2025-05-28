@@ -1,6 +1,6 @@
 {
   "name": "@deary/pinia-plugin-persist",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://gitee.com/aiyvyang/deary-pinia-plugin-persist.git"
